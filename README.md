@@ -16,15 +16,11 @@ https://raw.githubusercontent.com/nesdeq/lg-smart-tv-pihole-blocklist/main/aggre
 https://raw.githubusercontent.com/nesdeq/lg-smart-tv-pihole-blocklist/main/workingappstore.txt
 ```
 
-Paste the URL into Pi-hole under Adlists, then run `pihole -g`.
+Paste the URL into Pi-hole under Adlists, then Tools, Update Gravity.
 
 ## Regex layer (aggressive, optional)
 
-Adlists match exact hostnames only. The matching regex below also catches every subdomain, country prefix and CDN alias (`*.aws-prd.net`, `*.edgekey.net`) of the same domains. Pi-hole web UI: Domains, then the Regex filter tab, paste the one line, Add to denylist. Or on the Pi-hole:
-
-```
-pihole --regex '<paste the regex>'
-```
+Adlists match exact hostnames only. The matching regex below also catches every subdomain, country prefix and CDN alias (`*.aws-prd.net`, `*.edgekey.net`) of the same domains. Pi-hole web UI: Domains, then the Regex filter tab, paste the one line, Add to denylist.
 
 With `aggressive.txt`:
 
@@ -38,7 +34,7 @@ With `workingappstore.txt` (never touches `lgtvsdp.com`, `lgappstv.com`, `nextlg
 ((\.|^)((lgtvcommon|lgsmartplatform|lgsmartad|lgeapi|lgthinq|lgthinqhome|lgtviot|lgwebostv|lggalleryplus|lgsmartweb)\.com|(lgtvcommon|lgsmartad)\.es|lgads\.tv)(\.|$))|((\.|^)(snu|su|su-ssl|nsu|snu-dev|su-dev|lgtvonline)\.lge\.com(\.|$))|((\.|^)(rdx2|security|smartshare)\.lgtvsdp\.com(\.|$))|((\.|^)(ad|ibs|ibis|lgrecommends)\.lgappstv\.com(\.|$))|((\.|^)(ibs|ibsstat|rdx2)\.nextlgsdp\.com(\.|$))|(^([a-z]{2,3}\.)?tv\.wiselg\.com$)|((^|[.-])(lgtvcommon|lgsmartplatform|lgsmartad|lgeapi|lgthinq|lgthinqhome|lgtviot|lgwebostv|lggalleryplus|lgsmartweb)-(com|es)\.)|((\.|^)((smartclip|yumenetworks|thetake|mindfieldonline|ueiwsp|cjpowercast)\.com|smartclip\.net|(castoola|alphonso)\.tv|iltrovatore\.it|kbbtv\.tech)(\.|$))|((\.|^)(lg-channelplus-[a-z0-9-]+\.xumo\.com|app-lgwebos\.pluto\.tv)$)|((\.|^)(api\.us-east-1\.aiv-delivery\.net|blacknut-prod-images-cdn\.b-cdn\.net|canvas\.tubitv\.com|cdn77\.utomik\.com|cf-trickplay\.aux\.pv-cdn\.net|developers\.google\.com|discovery\.meethue\.com|eligibility-panelresearch\.googlevideo\.com|enabler\.msf\.cdn\.mediaset\.net|ht\.la7\.it|i\.ibb\.co|images\.pluto\.tv|images\.redbox\.com|img\.nvidiagrid\.net|mediaservices\.cdn-apple\.com|nevoai-iothub-54-prod\.azure-devices\.net|s3-iad-2\.cf\.dash\.row\.aiv-cdn\.net|service\.idsync\.analytics\.yahoo\.com|threeplr-avuypkjypveaj-0\.api\.amazonvideo\.com|unagi-na\.amazon\.com|vjs\.zencdn\.net|vod08\.msf\.cdn\.mediaset\.net|www\.la7\.it)$)
 ```
 
-Verify a match with `pihole-FTL regex-test "eic.recommend.lgtvcommon.com" '<regex>'`. Regex entries apply to every client, so if you use the LG ThinQ app elsewhere on the network, put the regex in a Pi-hole group that contains only the TV.
+Regex entries apply to every client, so if you use the LG ThinQ app elsewhere on the network, put the regex in a Pi-hole group that contains only the TV.
 
 Two endpoints from the Gamers Nexus report cannot be blocked by DNS: the hardcoded firmware fallback `156.147.69.32:8080` and the live telemetry endpoint `54.186.247.229:443`. Block those at the firewall.
 
