@@ -1,4 +1,4 @@
-# LG Smart TV (webOS) Pi-hole blocklist: https://github.com/nesdeq/lg-smart-tv-pihole-blocklist
+# LG Smart TV (webOS) Pi-hole blocklist, Content Store kept working: https://github.com/nesdeq/lg-smart-tv-pihole-blocklist
 0.0.0.0 ad.lgappstv.com
 0.0.0.0 ad.lgsmartad.com
 0.0.0.0 ads.lgtvcommon.com
@@ -9,8 +9,6 @@
 0.0.0.0 ag-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ag.lgsmartad.com
 0.0.0.0 ai.lgsmartad.com
-0.0.0.0 aic-gfts.lge.com
-0.0.0.0 aic-ngfts.lge.com
 0.0.0.0 aic-op-lss.lgthinq.com
 0.0.0.0 aic.ads.lgtvcommon.com
 0.0.0.0 aic.api.lgtviot.com
@@ -34,6 +32,7 @@
 0.0.0.0 an.lgsmartad.com
 0.0.0.0 ao-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ao.lgsmartad.com
+0.0.0.0 api.lgtviot.com
 0.0.0.0 api.thetake.com
 0.0.0.0 api.us-east-1.aiv-delivery.net
 0.0.0.0 app-lgwebos.pluto.tv
@@ -73,6 +72,7 @@
 0.0.0.0 br.lgsmartad.com
 0.0.0.0 bs-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 bs.lgsmartad.com
+0.0.0.0 buddy.lgtviot.com
 0.0.0.0 bw-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 by-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 bz-ad-lgsmartad-com.aws-prd.net
@@ -109,6 +109,9 @@
 0.0.0.0 co-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 co.lgsmartad.com
 0.0.0.0 common.lgthinq.com
+0.0.0.0 commonpush.lgtviot.com
+0.0.0.0 connect-client.lgthinq.com
+0.0.0.0 cpauth.lgtvcommon.com
 0.0.0.0 cr-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 cr.lgsmartad.com
 0.0.0.0 cu.lgsmartad.com
@@ -124,7 +127,6 @@
 0.0.0.0 de.info.lgsmartad.com
 0.0.0.0 de.lgeapi.com
 0.0.0.0 de.lgsmartad.com
-0.0.0.0 de.lgtvsdp.com
 0.0.0.0 de.rdx2.lgtvsdp.com
 0.0.0.0 developers.google.com
 0.0.0.0 discovery-log-view.castoola.tv
@@ -148,13 +150,7 @@
 0.0.0.0 eg-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 eg.lgsmartad.com
 0.0.0.0 eic-common.lgthinq.com
-0.0.0.0 eic-gfts.nextlgsdp.com
 0.0.0.0 eic-iotservice.lgthinq.com
-0.0.0.0 eic-ngfts.lge.com
-0.0.0.0 eic-ngfts.lge.com.edgekey.net
-0.0.0.0 eic-ngfts.tv.wiselg.com
-0.0.0.0 eic-qt2-ngfts.lge.com
-0.0.0.0 eic-qt2-ngfts.lge.com.edgekey.net
 0.0.0.0 eic-service.lgthinq.com
 0.0.0.0 eic-svc-lgthinq-com.aws-thinq-prd.net
 0.0.0.0 eic.ads.lgtvcommon.com
@@ -180,7 +176,6 @@
 0.0.0.0 es.ibs.lgappstv.com
 0.0.0.0 es.info.lgsmartad.com
 0.0.0.0 es.lgsmartad.com
-0.0.0.0 es.lgtvsdp.com
 0.0.0.0 es.rdx2.lgtvsdp.com
 0.0.0.0 et-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 et.lgsmartad.com
@@ -193,7 +188,6 @@
 0.0.0.0 fr-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 fr.ibs.lgappstv.com
 0.0.0.0 fr.lgsmartad.com
-0.0.0.0 fr.lgtvsdp.com
 0.0.0.0 fr.rdx2.lgtvsdp.com
 0.0.0.0 fr.security.lgtvsdp.com
 0.0.0.0 ga-ad-lgsmartad-com.aws-prd.net
@@ -236,6 +230,8 @@
 0.0.0.0 i.ibb.co
 0.0.0.0 ibis.lgappstv.com
 0.0.0.0 ibs.lgappstv.com
+0.0.0.0 ibs.nextlgsdp.com
+0.0.0.0 ibsstat.nextlgsdp.com
 0.0.0.0 id-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 id.lgsmartad.com
 0.0.0.0 ie-ad-lgsmartad-com.aws-prd.net
@@ -262,7 +258,6 @@
 0.0.0.0 it.ibs.lgappstv.com
 0.0.0.0 it.info.lgsmartad.com
 0.0.0.0 it.lgsmartad.com
-0.0.0.0 it.lgtvsdp.com
 0.0.0.0 it.rdx2.lgtvsdp.com
 0.0.0.0 it.smartshare.lgtvsdp.com
 0.0.0.0 jm-ad-lgsmartad-com.aws-prd.net
@@ -276,9 +271,6 @@
 0.0.0.0 kg-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 kg.lgsmartad.com
 0.0.0.0 kh-ad-lgsmartad-com.aws-prd.net
-0.0.0.0 kic-ngfts.lge.com
-0.0.0.0 kic-ngfts.lge.com.edgekey.net
-0.0.0.0 kic-qt2-ngfts.lge.com
 0.0.0.0 kic.ads.lgtvcommon.com
 0.0.0.0 kic.api.lgtviot.com
 0.0.0.0 kic.cdpbeacon.lgtvcommon.com
@@ -312,11 +304,14 @@
 0.0.0.0 lgad.cjpowercast.com
 0.0.0.0 lgad.cjpowercast.com.edgesuite.net
 0.0.0.0 lgads.tv
-0.0.0.0 lgappstv.com
+0.0.0.0 lggalleryplus.com
 0.0.0.0 lgsmartad.com
 0.0.0.0 lgsmartad.es
+0.0.0.0 lgsmartweb.com
+0.0.0.0 lgthinq.com
+0.0.0.0 lgtvcommon.com
+0.0.0.0 lgtviot.com
 0.0.0.0 lgtvonline.lge.com
-0.0.0.0 lgtvsdp.com
 0.0.0.0 li-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 limone.iltrovatore.it
 0.0.0.0 lk-ad-lgsmartad-com.aws-prd.net
@@ -362,11 +357,10 @@
 0.0.0.0 my.lgsmartad.com
 0.0.0.0 mz-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 na-ad-lgsmartad-com.aws-prd.net
+0.0.0.0 netflixvoice.lgtvcommon.com
 0.0.0.0 nevoai-iothub-54-prod.azure-devices.net
 0.0.0.0 ng-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ng.lgsmartad.com
-0.0.0.0 ngfts.lge.com
-0.0.0.0 ngfts.nextlgsdp.com
 0.0.0.0 ni-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ni.lgsmartad.com
 0.0.0.0 nl-ad-lgsmartad-com.aws-prd.net
@@ -374,11 +368,13 @@
 0.0.0.0 no-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 no.lgsmartad.com
 0.0.0.0 noti.lgthinq.com
+0.0.0.0 nsu.lge.com
 0.0.0.0 nudge.lgtvcommon.com
 0.0.0.0 nudge.lgtvcommon.es
 0.0.0.0 nz-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 nz.lgsmartad.com
 0.0.0.0 objectcontent.lgthinq.com
+0.0.0.0 ocp.lgtviot.com
 0.0.0.0 om-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 om.lgsmartad.com
 0.0.0.0 pa-ad-lgsmartad-com.aws-prd.net
@@ -392,6 +388,7 @@
 0.0.0.0 pk.lgsmartad.com
 0.0.0.0 pl-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 pl.lgsmartad.com
+0.0.0.0 pnv.lgtvcommon.com
 0.0.0.0 pr-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 pr.lgsmartad.com
 0.0.0.0 ps-ad-lgsmartad-com.aws-prd.net
@@ -405,18 +402,19 @@
 0.0.0.0 pt.lgeapi.com
 0.0.0.0 pt.lgrecommends.lgappstv.com
 0.0.0.0 pt.lgsmartad.com
-0.0.0.0 pt.nextlgsdp.com
 0.0.0.0 pt.rdx2.lgtvsdp.com
 0.0.0.0 pt.rdx2.nextlgsdp.com
+0.0.0.0 push.lgtviot.com
 0.0.0.0 py-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 py.lgsmartad.com
 0.0.0.0 qa-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 qa.lgsmartad.com
-0.0.0.0 qt2-ngfts.lge.com
-0.0.0.0 qt2-ngfts.lge.com.edgekey.net
+0.0.0.0 qcardservice.lgtvcommon.com
+0.0.0.0 qt2-kic.lab.lgtvcommon.com
 0.0.0.0 rdl.lgtvcommon.com
 0.0.0.0 rdl.lgtvcommon.es
 0.0.0.0 rdx2.lgtvsdp.com
+0.0.0.0 rdx2.nextlgsdp.com
 0.0.0.0 re-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 recommend.lgtvcommon.com
 0.0.0.0 recommend.lgtvcommon.es
@@ -426,7 +424,6 @@
 0.0.0.0 rs.lgsmartad.com
 0.0.0.0 ru-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 ru.lgsmartad.com
-0.0.0.0 ruc-ngfts.lge.com
 0.0.0.0 ruc.api.lgtviot.com
 0.0.0.0 ruc.homeprv.lgtvcommon.com
 0.0.0.0 ruc.lgtviot.com
@@ -460,10 +457,15 @@
 0.0.0.0 smartshare.lgtvsdp.com
 0.0.0.0 sn-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 sn.lgsmartad.com
+0.0.0.0 snu-dev.lge.com
 0.0.0.0 snu.lge.com
+0.0.0.0 sports.lgtviot.com
 0.0.0.0 sr-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 sr.lgsmartad.com
 0.0.0.0 static.iltrovatore.it
+0.0.0.0 su-dev.lge.com
+0.0.0.0 su-ssl.lge.com
+0.0.0.0 su.lge.com
 0.0.0.0 sv-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 sv.lgsmartad.com
 0.0.0.0 sy-ad-lgsmartad-com.aws-prd.net
@@ -483,6 +485,7 @@
 0.0.0.0 tr.lgsmartad.com
 0.0.0.0 tt-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 tt.lgsmartad.com
+0.0.0.0 tv.wiselg.com
 0.0.0.0 tw-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 tw.lgsmartad.com
 0.0.0.0 tz-ad-lgsmartad-com.aws-prd.net
@@ -499,7 +502,6 @@
 0.0.0.0 us.info.lgsmartad.com
 0.0.0.0 us.lgeapi.com
 0.0.0.0 us.lgsmartad.com
-0.0.0.0 us.lgtvsdp.com
 0.0.0.0 us.rdx2.lgtvsdp.com
 0.0.0.0 uy-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 uy.lgsmartad.com
@@ -516,6 +518,7 @@
 0.0.0.0 vod08.msf.cdn.mediaset.net
 0.0.0.0 vu-ad-lgsmartad-com.aws-prd.net
 0.0.0.0 wiseconfig.lgtvcommon.com
+0.0.0.0 wiseresource.lgtvcommon.com
 0.0.0.0 www.kbbtv.tech
 0.0.0.0 www.la7.it
 0.0.0.0 www.ueiwsp.com
